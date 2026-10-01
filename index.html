@@ -3,146 +3,459 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InovaMente Solutions | CFTV, Redes e Infraestrutura de TI</title>
+    <title>InovaMente Solutions | CFTV, Redes Estruturadas e Suporte de TI</title>
+    <meta name="description" content="Instalação e manutenção de CFTV, cabeamento estruturado, redes Wi-Fi corporativas e suporte em informática em Magé, Rio de Janeiro e Grande Rio. Empresa com CNPJ e emissão de NFS-e.">
     <link rel="icon" type="image/jpeg" href="logo.jpeg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="bg-black text-slate-100 font-sans antialiased">
+<body class="bg-black text-slate-100 font-sans antialiased selection:bg-fuchsia-500 selection:text-white">
 
-    <!-- Cabeçalho / Navbar -->
-    <header class="fixed w-full z-50 bg-black/95 backdrop-blur border-b border-slate-800/80">
+    <!-- Barra Superior de Confiança -->
+    <div class="bg-slate-950 border-b border-slate-800/80 text-xs text-slate-400 py-2 px-4">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5 text-slate-300">
+                    <i class="fa-solid fa-circle-check text-emerald-400"></i> Empresa Regularizada • CNPJ: 69.414.284/0001-69
+                </span>
+                <span class="hidden sm:inline text-slate-700">|</span>
+                <span class="hidden sm:flex items-center gap-1.5">
+                    <i class="fa-solid fa-file-invoice text-sky-400"></i> Emissão de Nota Fiscal (NFS-e)
+                </span>
+            </div>
+            <div class="flex items-center gap-4 ml-auto sm:ml-0">
+                <span class="hidden md:flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-fuchsia-400"></i> Magé, Rio de Janeiro e Grande Rio
+                </span>
+                <a href="https://wa.me/5521967398322" target="_blank" class="text-sky-400 hover:text-sky-300 font-medium flex items-center gap-1">
+                    <i class="fa-brands fa-whatsapp"></i> (21) 96739-8322
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabeçalho Principal / Navbar -->
+    <header class="sticky top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-slate-800/80">
         <div class="max-w-6xl mx-auto px-4 h-24 flex items-center justify-between">
             <a href="#" class="flex items-center">
                 <img src="logo.jpeg" alt="InovaMente Solutions" class="h-16 md:h-20 w-auto object-contain">
             </a>
-            <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
-                <a href="#servicos" class="hover:text-fuchsia-400 transition">Serviços</a>
-                <a href="#diferenciais" class="hover:text-fuchsia-400 transition">Diferenciais</a>
-                <a href="https://calendar.app.google/p7AoymVDTPTWhG567" target="_blank" class="hover:text-sky-400 transition flex items-center gap-1.5">
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+                <a href="#servicos" class="hover:text-sky-400 transition">Soluções</a>
+                <a href="#publico" class="hover:text-sky-400 transition">Quem Atendemos</a>
+                <a href="#como-funciona" class="hover:text-sky-400 transition">Como Trabalhamos</a>
+                <a href="#duvidas" class="hover:text-sky-400 transition">Dúvidas</a>
+                <a href="#contato" class="hover:text-sky-400 transition">Contato</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="https://calendar.app.google/p7AoymVDTPTWhG567" target="_blank" class="hidden sm:flex items-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 px-4 py-2.5 rounded-lg text-sm font-semibold transition">
                     <i class="fa-regular fa-calendar-check text-sky-400"></i> Agendar Visita
                 </a>
-                <a href="#contato" class="hover:text-fuchsia-400 transition">Contato</a>
-            </nav>
-            <a href="https://wa.me/5521967398322?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20InovaMente%20Solutions." target="_blank" class="bg-gradient-to-r from-blue-500 to-fuchsia-600 hover:from-blue-400 hover:to-fuchsia-500 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition flex items-center gap-2 shadow-lg shadow-fuchsia-600/20">
-                <i class="fa-brands fa-whatsapp text-lg"></i> Orçamento Rápido
-            </a>
+                <a href="https://wa.me/5521967398322?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20InovaMente%20Solutions." target="_blank" class="bg-gradient-to-r from-blue-500 to-fuchsia-600 hover:from-blue-400 hover:to-fuchsia-500 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition flex items-center gap-2 shadow-lg shadow-fuchsia-600/20">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Orçamento
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-40 pb-20 px-4 bg-gradient-to-b from-black via-slate-950 to-slate-900">
-        <div class="max-w-4xl mx-auto text-center">
-            <img src="logo.jpeg" alt="Logo InovaMente Solutions" class="h-36 md:h-44 w-auto mx-auto mb-6 object-contain">
-            <span class="inline-block py-1 px-3 rounded-full bg-fuchsia-500/10 border border-fuchsia-500/30 text-fuchsia-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                Segurança Eletrônica & Infraestrutura de Redes
-            </span>
+    <section class="relative overflow-hidden pt-16 pb-24 px-4 bg-gradient-to-b from-black via-slate-950 to-slate-900">
+        <!-- Efeito de Luz de Fundo -->
+        <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-gradient-to-r from-blue-600/20 to-fuchsia-600/20 blur-[120px] pointer-events-none"></div>
+
+        <div class="relative max-w-4xl mx-auto text-center">
+            <img src="logo.jpeg" alt="Logo InovaMente Solutions" class="h-32 md:h-40 w-auto mx-auto mb-6 object-contain">
+            
+            <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-slate-900/90 border border-slate-700/80 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Segurança Eletrônica • Redes • Infraestrutura de TI
+            </div>
+
             <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
-                Proteção inteligente e <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-fuchsia-500">conectividade de alto desempenho.</span>
+                Segurança inteligente e <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-400 to-fuchsia-500">infraestrutura de confiança.</span>
             </h1>
-            <p class="text-lg text-slate-400 mb-10 max-w-2xl mx-auto">
-                Projetos, instalação e manutenção de sistemas de CFTV, cabeamento estruturado, redes corporativas e suporte em informática para empresas, condomínios e residências.
+
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Projetos, instalação e manutenção de câmeras de segurança (CFTV), cabeamento estruturado e suporte técnico em informática com acabamento profissional e garantia.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://wa.me/5521967398322?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20InovaMente%20Solutions." target="_blank" class="bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-base transition flex items-center justify-center gap-3 shadow-lg shadow-green-600/20">
-                    <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp: (21) 96739-8322
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="https://wa.me/5521967398322?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20InovaMente%20Solutions." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-xl font-bold text-base transition flex items-center justify-center gap-3 shadow-lg shadow-emerald-600/25">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> Falar com Especialista no WhatsApp
                 </a>
-                <a href="https://calendar.app.google/p7AoymVDTPTWhG567" target="_blank" class="bg-gradient-to-r from-blue-600 to-fuchsia-600 hover:from-blue-500 hover:to-fuchsia-500 text-white px-8 py-4 rounded-xl font-bold text-base transition flex items-center justify-center gap-3 shadow-lg shadow-fuchsia-600/20">
+                <a href="https://calendar.app.google/p7AoymVDTPTWhG567" target="_blank" class="bg-gradient-to-r from-blue-600 to-fuchsia-600 hover:from-blue-500 hover:to-fuchsia-500 text-white px-8 py-4 rounded-xl font-bold text-base transition flex items-center justify-center gap-3 shadow-lg shadow-fuchsia-600/25">
                     <i class="fa-regular fa-calendar-check text-xl"></i> Agendar Visita Técnica Online
                 </a>
             </div>
+
+            <!-- Selos de Confiança Rápida -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-slate-800/80 text-left">
+                <div class="flex items-center gap-3 bg-slate-900/40 p-3 rounded-xl border border-slate-800/60">
+                    <i class="fa-solid fa-file-shield text-sky-400 text-2xl"></i>
+                    <div>
+                        <p class="text-white font-bold text-xs">Com Nota Fiscal</p>
+                        <p class="text-slate-400 text-xs">NFS-e para empresas</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 bg-slate-900/40 p-3 rounded-xl border border-slate-800/60">
+                    <i class="fa-solid fa-medal text-fuchsia-400 text-2xl"></i>
+                    <div>
+                        <p class="text-white font-bold text-xs">Garantia Técnica</p>
+                        <p class="text-slate-400 text-xs">Em todos os serviços</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 bg-slate-900/40 p-3 rounded-xl border border-slate-800/60">
+                    <i class="fa-solid fa-mobile-screen-button text-sky-400 text-2xl"></i>
+                    <div>
+                        <p class="text-white font-bold text-xs">Acesso no Celular</p>
+                        <p class="text-slate-400 text-xs">Monitore de onde estiver</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 bg-slate-900/40 p-3 rounded-xl border border-slate-800/60">
+                    <i class="fa-solid fa-screwdriver-wrench text-fuchsia-400 text-2xl"></i>
+                    <div>
+                        <p class="text-white font-bold text-xs">Instalação Limpa</p>
+                        <p class="text-slate-400 text-xs">Organização e padrão</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Seção de Serviços -->
-    <section id="servicos" class="py-20 px-4 max-w-6xl mx-auto">
-        <div class="text-center mb-14">
-            <h2 class="text-3xl font-bold text-white mb-3">Nossas Soluções Técnicas</h2>
-            <p class="text-slate-400">Atendimento completo com emissão de Nota Fiscal (NFS-e) e garantia técnica.</p>
+    <!-- Seção de Soluções Detalhadas -->
+    <section id="servicos" class="py-24 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-sky-400 font-semibold text-xs uppercase tracking-widest">Especialidades Técnicas</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-4">Soluções Completas em Tecnologia e Segurança</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">
+                Trabalhamos com equipamentos de primeira linha e boas práticas de infraestrutura para garantir estabilidade, imagem nítida e rede sem quedas.
+            </p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-            <!-- Card 1: CFTV -->
-            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 hover:border-fuchsia-500/50 transition">
-                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-fuchsia-500/20 text-sky-400 flex items-center justify-center text-2xl mb-6">
-                    <i class="fa-solid fa-video"></i>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-3">CFTV e Segurança Eletrônica</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Instalação e configuração de câmeras IP e HD, gravadores DVR/NVR, monitoramento remoto pelo celular e organização de infraestrutura de vídeo.
-                </p>
-            </div>
-
-            <!-- Card 2: Redes -->
-            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 hover:border-fuchsia-500/50 transition">
-                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-fuchsia-500/20 text-fuchsia-400 flex items-center justify-center text-2xl mb-6">
-                    <i class="fa-solid fa-network-wired"></i>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-3">Redes e Telecomunicações</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Cabeamento estruturado, montagem e organização de racks, configuração de switches, roteadores e redes Wi-Fi corporativas de alta cobertura.
-                </p>
-            </div>
-
-            <!-- Card 3: Manutenção e TI -->
-            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 hover:border-fuchsia-500/50 transition">
-                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-fuchsia-500/20 text-sky-400 flex items-center justify-center text-2xl mb-6">
-                    <i class="fa-solid fa-computer"></i>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-3">Manutenção e Informática</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Manutenção preventiva e corretiva de computadores, estações de monitoramento, upgrades de hardware e configuração de periféricos.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Diferenciais -->
-    <section id="diferenciais" class="py-16 px-4 bg-slate-900/50 border-y border-slate-800">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
-            <div>
-                <i class="fa-solid fa-file-invoice text-sky-400 text-3xl mb-3"></i>
-                <h4 class="font-bold text-white text-lg">Empresa Formalizada (CNPJ)</h4>
-                <p class="text-slate-400 text-sm mt-1">Emissão de Nota Fiscal Eletrônica (NFS-e) e propostas formais para empresas e condomínios.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-screwdriver-wrench text-fuchsia-400 text-3xl mb-3"></i>
-                <h4 class="font-bold text-white text-lg">Acabamento Profissional</h4>
-                <p class="text-slate-400 text-sm mt-1">Passagem limpa de cabos, identificação de pontos e configuração segura de acesso remoto.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-headset text-sky-400 text-3xl mb-3"></i>
-                <h4 class="font-bold text-white text-lg">Suporte e Garantia</h4>
-                <p class="text-slate-400 text-sm mt-1">Acompanhamento pós-instalação e garantia integral sobre os serviços executados.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé e Contato -->
-    <footer id="contato" class="py-12 px-4 bg-black text-slate-400 text-sm">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 border-b border-slate-800 pb-8">
-            <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-                <img src="logo.jpeg" alt="InovaMente Solutions" class="h-16 w-auto object-contain">
+            <!-- Serviço 1: CFTV -->
+            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-sky-500/60 transition group">
                 <div>
-                    <h3 class="text-white font-bold text-lg">InovaMente Solutions</h3>
-                    <p class="mt-1">Atendimento em Magé, Rio de Janeiro e Grande Rio.</p>
-                    <p class="mt-1">WhatsApp: (21) 96739-8322 | E-mail: contato@inovamentesolutions.com</p>
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500/20 to-fuchsia-500/20 border border-sky-500/30 text-sky-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">CFTV e Segurança Eletrônica</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Monitoramento contínuo em alta definição para proteger seu patrimônio e acompanhar tudo em tempo real pelo smartphone.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+                            <span>Instalação de câmeras IP, Full HD, infravermelho e visão noturna colorida</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+                            <span>Configuração de gravadores DVR e NVR com gravação inteligente por movimento</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+                            <span>Liberação e configuração segura de acesso remoto no celular e computador</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+                            <span>Manutenção corretiva em câmeras sem sinal, troca de conectores, fontes e cabos</span>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="flex flex-col sm:flex-row gap-3">
-                <a href="https://calendar.app.google/p7AoymVDTPTWhG567" target="_blank" class="bg-gradient-to-r from-blue-600 to-fuchsia-600 hover:from-blue-500 hover:to-fuchsia-500 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
-                    <i class="fa-regular fa-calendar-check text-lg"></i> Agendar Visita Online
+                <a href="https://wa.me/5521967398322?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20C%C3%A2meras%20de%20Seguran%C3%A7a%20(CFTV)." target="_blank" class="w-full py-3 px-4 rounded-xl bg-slate-900 group-hover:bg-sky-600 text-white font-semibold text-sm text-center transition flex items-center justify-center gap-2">
+                    Orçar Projeto de CFTV <i class="fa-solid fa-arrow-right text-xs"></i>
                 </a>
-                <a href="https://wa.me/5521967398322?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20t%C3%A9cnica%20com%20a%20InovaMente%20Solutions." target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-green-400 text-lg"></i> Chamar no WhatsApp
+            </div>
+
+            <!-- Serviço 2: Redes -->
+            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-fuchsia-500/60 transition group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500/20 to-fuchsia-500/20 border border-fuchsia-500/30 text-fuchsia-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Redes e Telecomunicações</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Infraestrutura de rede organizada, rápida e estável para empresas, escritórios, comércios e residências de grande porte.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-fuchsia-400 mt-1"></i>
+                            <span>Lançamento de cabeamento estruturado (Cat5e / Cat6), canaletas e eletrodutos</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-fuchsia-400 mt-1"></i>
+                            <span>Montagem, limpeza, identificação e organização de Racks, Patch Panels e Switches</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-fuchsia-400 mt-1"></i>
+                            <span>Instalação de Access Points (Wi-Fi corporativo) para eliminar zonas sem sinal</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-fuchsia-400 mt-1"></i>
+                            <span>Crimpagem técnica, testes de certificação de pontos de rede e tomadas RJ45</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5521967398322?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Cabeamento%20e%20Redes." target="_blank" class="w-full py-3 px-4 rounded-xl bg-slate-900 group-hover:bg-fuchsia-600 text-white font-semibold text-sm text-center transition flex items-center justify-center gap-2">
+                    Orçar Infraestrutura de Rede <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Serviço 3: Informática -->
+            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-sky-500/60 transition group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500/20 to-fuchsia-500/20 border border-sky-500/30 text-sky-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-computer"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Manutenção e Informática</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Suporte técnico ágil para manter seus computadores, centrais de monitoramento e periféricos funcionando com máximo desempenho.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+                            <span>Manutenção preventiva e corretiva em computadores e notebooks</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+                            <span>Upgrade de desempenho (instalação de SSD, memória RAM e fontes reais)</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+                            <span>Configuração de computadores para centrais de portaria e monitoramento</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+                            <span>Instalação de sistemas, impressoras em rede e periféricos corporativos</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5521967398322?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Manuten%C3%A7%C3%A3o%20de%20Computadores%20e%20TI." target="_blank" class="w-full py-3 px-4 rounded-xl bg-slate-900 group-hover:bg-sky-600 text-white font-semibold text-sm text-center transition flex items-center justify-center gap-2">
+                    Solicitar Suporte Técnico <i class="fa-solid fa-arrow-right text-xs"></i>
                 </a>
             </div>
         </div>
-        <div class="max-w-6xl mx-auto pt-6 text-xs text-slate-500 flex flex-col sm:flex-row justify-between gap-2 text-center sm:text-left">
-            <p>Razão Social: 69.414.284 ISABEL CRISTINA DE ANDRADE FREITAS | CNPJ: 69.414.284/0001-69</p>
-            <p>Guia de Pacobaíba, Magé - RJ | CEP: 25925-445</p>
+    </section>
+
+    <!-- Quem Atendemos -->
+    <section id="publico" class="py-20 px-4 bg-slate-950 border-y border-slate-800/80">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-14">
+                <span class="text-fuchsia-400 font-semibold text-xs uppercase tracking-widest">Atendimento Sob Medida</span>
+                <h2 class="text-3xl font-bold text-white mt-2">Projetos para Todos os Portes</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-black/60 border border-slate-800 p-7 rounded-2xl">
+                    <i class="fa-solid fa-building-shield text-sky-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Condomínios e Prédios</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Monitoramento de portarias, garagens, perímetros e áreas comuns. Fornecemos proposta formal, contrato e Nota Fiscal (NFS-e) exigidos por síndicos e administradoras.
+                    </p>
+                </div>
+                <div class="bg-black/60 border border-slate-800 p-7 rounded-2xl">
+                    <i class="fa-solid fa-store text-fuchsia-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Empresas, Lojas e Galpões</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Proteção de estoque, frente de caixa e recepção, além de cabeamento de rede estruturado e Wi-Fi estável para sistemas de vendas e escritórios.
+                    </p>
+                </div>
+                <div class="bg-black/60 border border-slate-800 p-7 rounded-2xl">
+                    <i class="fa-solid fa-house-lock text-sky-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Residências</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Tranquilidade para sua família acompanhar a casa pelo celular de qualquer lugar, com instalação discreta, limpa e sem fios expostos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Trabalhamos (Passo a Passo que gera confiança) -->
+    <section id="como-funciona" class="py-24 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-sky-400 font-semibold text-xs uppercase tracking-widest">Transparência do Início ao Fim</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-4">Como Funciona Nosso Atendimento</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">
+                Um processo simples, organizado e sem surpresas para você ter total segurança na contratação.
+            </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 relative">
+                <span class="text-4xl font-black text-slate-800 absolute top-4 right-5">01</span>
+                <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold mb-4">
+                    <i class="fa-regular fa-comments"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Contato ou Agendamento</h3>
+                <p class="text-slate-400 text-sm">
+                    Você nos chama no WhatsApp ou escolhe o melhor dia e horário diretamente na nossa agenda online.
+                </p>
+            </div>
+
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 relative">
+                <span class="text-4xl font-black text-slate-800 absolute top-4 right-5">02</span>
+                <div class="w-10 h-10 rounded-lg bg-fuchsia-500/20 text-fuchsia-400 flex items-center justify-center font-bold mb-4">
+                    <i class="fa-solid fa-magnifying-glass-location"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Avaliação Técnica</h3>
+                <p class="text-slate-400 text-sm">
+                    Analisamos os melhores ângulos para as câmeras, passagem de cabos e necessidades da sua rede.
+                </p>
+            </div>
+
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 relative">
+                <span class="text-4xl font-black text-slate-800 absolute top-4 right-5">03</span>
+                <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold mb-4">
+                    <i class="fa-solid fa-file-signature"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Orçamento Detalhado</h3>
+                <p class="text-slate-400 text-sm">
+                    Enviamos a proposta comercial formalizada com nosso CNPJ, discriminando serviços, prazos e materiais.
+                </p>
+            </div>
+
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 relative">
+                <span class="text-4xl font-black text-slate-800 absolute top-4 right-5">04</span>
+                <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold mb-4">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Entrega e Garantia</h3>
+                <p class="text-slate-400 text-sm">
+                    Executamos o serviço com máxima organização, configuramos seu celular e emitimos sua Nota Fiscal.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Perguntas Frequentes (FAQ) -->
+    <section id="duvidas" class="py-20 px-4 bg-slate-950 border-t border-slate-800/80">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-fuchsia-400 font-semibold text-xs uppercase tracking-widest">Tire suas Dúvidas</span>
+                <h2 class="text-3xl font-bold text-white mt-2">Perguntas Frequentes</h2>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group bg-black border border-slate-800 rounded-xl p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-white list-none">
+                        <span>A InovaMente Solutions emite Nota Fiscal (NFS-e) para condomínios e empresas?</span>
+                        <i class="fa-solid fa-chevron-down text-sky-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                        Sim! Somos uma empresa formalizada (CNPJ 69.414.284/0001-69) e emitimos Nota Fiscal de Serviços Eletrônica (NFS-e), além de propostas comerciais e ordens de serviço formais para síndicos, administradoras e empresas.
+                    </p>
+                </details>
+
+                <details class="group bg-black border border-slate-800 rounded-xl p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-white list-none">
+                        <span>Consigo acompanhar as câmeras em tempo real pelo celular?</span>
+                        <i class="fa-solid fa-chevron-down text-sky-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                        Com certeza. Deixamos o aplicativo oficial configurado no seu smartphone (Android ou iPhone) para você visualizar as câmeras ao vivo e consultar gravações antigas de qualquer lugar com internet.
+                    </p>
+                </details>
+
+                <details class="group bg-black border border-slate-800 rounded-xl p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-white list-none">
+                        <span>Posso comprar os equipamentos por conta própria e contratar apenas a instalação?</span>
+                        <i class="fa-solid fa-chevron-down text-sky-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                        Sim! Trabalhamos das duas formas: podemos fornecer a solução completa (materiais + instalação) ou podemos indicar a lista exata dos melhores equipamentos para você comprar diretamente e contratar apenas a nossa mão de obra especializada.
+                    </p>
+                </details>
+
+                <details class="group bg-black border border-slate-800 rounded-xl p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-white list-none">
+                        <span>Vocês também fazem reparo em sistemas de câmeras ou redes já instalados?</span>
+                        <i class="fa-solid fa-chevron-down text-sky-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                        Sim. Realizamos manutenção preventiva e corretiva em sistemas existentes: câmeras fora do ar, imagens com chiado, organização de racks bagunçados, troca de fontes/conectores e reconfiguração de DVR/NVR.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Final de Chamada para Ação -->
+    <section class="py-16 px-4 bg-gradient-to-r from-blue-950/60 via-slate-900 to-fuchsia-950/60 border-y border-slate-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-white mb-4">
+                Pronto para proteger e conectar seu espaço com qualidade profissional?
+            </h2>
+            <p class="text-slate-300 mb-8 max-w-xl mx-auto">
+                Fale agora mesmo pelo WhatsApp para tirar dúvidas rápidas ou reserve um horário diretamente na nossa agenda online.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5521967398322?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20InovaMente%20Solutions." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-xl font-bold transition flex items-center justify-center gap-2 shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Chamar no WhatsApp: (21) 96739-8322
+                </a>
+                <a href="https://calendar.app.google/p7AoymVDTPTWhG567" target="_blank" class="bg-white hover:bg-slate-200 text-slate-950 px-8 py-4 rounded-xl font-bold transition flex items-center justify-center gap-2">
+                    <i class="fa-regular fa-calendar-check text-lg"></i> Agendar Visita Técnica
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé Oficial Completo -->
+    <footer id="contato" class="py-14 px-4 bg-black text-slate-400 text-sm">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 border-b border-slate-800/80 pb-10">
+            <!-- Coluna 1: Marca -->
+            <div>
+                <img src="logo.jpeg" alt="InovaMente Solutions" class="h-16 w-auto object-contain mb-4">
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Soluções especializadas em CFTV, segurança eletrônica, redes estruturadas e manutenção de computadores com atendimento de confiança.
+                </p>
+            </div>
+
+            <!-- Coluna 2: Contato Direto -->
+            <div>
+                <h4 class="text-white font-bold text-base mb-4">Canais de Atendimento</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li class="flex items-center gap-2.5">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                        <a href="https://wa.me/5521967398322" target="_blank" class="hover:text-white transition">(21) 96739-8322</a>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i class="fa-regular fa-envelope text-sky-400 text-base"></i>
+                        <a href="mailto:contato@inovamentesolutions.com" class="hover:text-white transition">contato@inovamentesolutions.com</a>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i class="fa-regular fa-calendar-check text-fuchsia-400 text-base"></i>
+                        <a href="https://calendar.app.google/p7AoymVDTPTWhG567" target="_blank" class="hover:text-white transition">Agendamento Online 24h</a>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i class="fa-solid fa-location-dot text-sky-400 text-base"></i>
+                        <span>Magé, Rio de Janeiro e Grande Rio</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Dados Empresariais -->
+            <div>
+                <h4 class="text-white font-bold text-base mb-4">Dados Empresariais</h4>
+                <div class="bg-slate-950 border border-slate-800/80 rounded-xl p-4 text-xs space-y-1.5 text-slate-400">
+                    <p><strong class="text-slate-200">Nome Fantasia:</strong> InovaMente Solutions</p>
+                    <p><strong class="text-slate-200">Razão Social:</strong> 69.414.284 ISABEL CRISTINA DE ANDRADE FREITAS</p>
+                    <p><strong class="text-slate-200">CNPJ:</strong> 69.414.284/0001-69</p>
+                    <p><strong class="text-slate-200">Endereço:</strong> Rua Yolanda Albuquerque Silva, 170 – Guia de Pacobaíba, Magé - RJ | CEP: 25925-445</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto pt-6 text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-2 text-center">
+            <p>© 2026 InovaMente Solutions. Todos os direitos reservados.</p>
+            <p>CFTV • Redes de Computadores • Suporte de TI</p>
         </div>
     </footer>
+
+    <!-- Botão Flutuante de WhatsApp -->
+    <a href="https://wa.me/5521967398322?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20InovaMente%20Solutions%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" aria-label="Falar no WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center text-3xl shadow-xl shadow-emerald-600/30 hover:scale-105 transition">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
